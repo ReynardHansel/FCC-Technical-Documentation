@@ -13,8 +13,8 @@
             <li><a class="nav-link" id="introduction">Introduction</a></li>
             <li><a class="nav-link" id="how_to_use">How to use</a></li>
             <li><a class="nav-link" id="selectors">Selectors</a></li>
-            <li><a class="nav-link" id="specificity">Specificity</a></li>
             <li><a class="nav-link" id="css_properties">CSS Properties</a></li>
+            <li><a class="nav-link" id="specificity">Specificity</a></li>
             <li><a class="nav-link" id="css_units">CSS units</a></li> <!--+ color units--> 
             <li><a class="nav-link" id="css_box_model">CSS Box Model</a></li>
             <li><a class="nav-link" id="fonts">Fonts</a></li>
@@ -30,16 +30,57 @@
     </nav>
 
     <main>
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>Cascading Style Sheets (CSS) describes how HTML elements are to be displayed on screen, paper, or in other media. It saves a lot of work as it can control layouts and designs of multiple web pages at once.</p>
+            <p>External stylesheets are stored in css files (.css)</p>
         </section>
         
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="how_to_use">
+            <header>How to Use</header>
+            <ul><p>There are 2 ways you could use CSS:</p></ul>
+                <li>
+                    The first one is to use the style tag in HTML and then write CSS in it.
+                    <p>Ex:</p>
+                    <code><img src="style tag.PNG"></code>
+                </li>
+                <li>The second one is to write your CSS in another CSS file, then link it to your HTML file(s)
+                    <p>Ex:</p>
+                    <code><img src="link tag.PNG"></code>
+                </li>
+                <p>However it's always suggested that you use the second method because the first one will make your html way too long and very hard to read. Besides, why would CSS files be created seperately in the first place if not to be used?</p>
         </section>
         
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="selectors">
+            <header>Selectors</header>
+            <p>Now that you have created the place where you can write CSS (whether it's a style tag or a new .css file), it's time to write and use CSS.</p>
+            <p>CSS targets an HTML attribute, then tells it to display a certain way. So to use CSS, first you have to select/target the element you want to style. This is done by what's called a "Selector" in CSS</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    p {
+        color: red;
+        font-size 20px;
+        font-style: italic;
+    }
+                </code>
+            </pre>
+            <p>Now all the &lt;p&gt; tags in the html file will have red color, 20px big, and displayed in italic.</p>
+            <p>There's a lot of CSS selectors but the most common used ones are the class and id selectors. You do this by defining a class and id in the html tag (Ex: <code>&lt;div class="card" id="first-card"&gt;&lt;/div&gt;</code>). And then to target a class, put a <code>.</code> in front of the class name. To target an id, put a <code>#</code> in front of the id name.</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    .card {
+        padding: 2em;
+        margin: 2em auto;
+        font-size: 1.3em;
+    }
+
+    #first-card {
+        background-image: url (background.jpg)
+    }
+                </code>
+            </pre>
         </section>
         
         <section class="main-section" id="">
