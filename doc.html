@@ -107,6 +107,35 @@
         
         <section class="main-section" id="specificity">
             <header>Specificity</header>
+            <p>If you have different styles that targets the same HTML element, CSS will run the code that is more specific/have higher specificity.</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;style&gt;
+            #demo {color: blue;}
+            .test {color: green;}
+            p {color: red;}
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+                        
+        &lt;p id="demo" class="test"&gt;HelloWorld!&lt;/p&gt;
+                        
+        &lt;/body&gt;
+    &lt;/html&gt;
+                </code>
+            </pre>
+            <p>There are 3 selectors that targets the same element and each of them has different properties. But the text will be shown in the color blue because an id(#) is more specific than a class and element selector.</p>
+
+            <h2>Specificity Hierarchy</h2>
+            <ol>Below are the order of the most specific (most priority) to the least specific (less priority) that you'll see on a daily basis:
+                <li>Inline styles - Example: &lt;h1 style="color: pink;"&gt;&lt;/h1&gt;</li>
+                <li>IDs - Example: #navbar</li>
+                <li>Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]</li>
+                <li>Elements and pseudo-elements - Example: h1, :before</li>
+            </ol>
         </section>
         
         <section class="main-section" id="">
