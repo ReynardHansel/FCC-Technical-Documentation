@@ -38,7 +38,8 @@
         
         <section class="main-section" id="how_to_use">
             <header>How to Use</header>
-            <ul><p>There are 2 ways you could use CSS:</p></ul>
+            <p>There are 2 ways you could use CSS:</p>
+            <ul>
                 <li>
                     The first one is to use the style tag in HTML and then write CSS in it.
                     <p>Ex:</p>
@@ -48,6 +49,7 @@
                     <p>Ex:</p>
                     <code><img src="link tag.PNG"></code>
                 </li>
+            </ul>
                 <p>However it's always suggested that you use the second method because the first one will make your html way too long and very hard to read. Besides, why would CSS files be created seperately in the first place if not to be used?</p>
         </section>
         
@@ -130,7 +132,8 @@
             <p>There are 3 selectors that targets the same element and each of them has different properties. But the text will be shown in the color blue because an id(#) is more specific than a class and element selector.</p>
 
             <h2>Specificity Hierarchy</h2>
-            <ol>Below are the order of the most specific (most priority) to the least specific (less priority) that you'll see on a daily basis:
+            <p>Below are the order of the most specific (most priority) to the least specific (less priority) that you'll see on a daily basis:</p>
+            <ol>
                 <li>Inline styles - Example: &lt;h1 style="color: pink;"&gt;&lt;/h1&gt;</li>
                 <li>IDs - Example: #navbar</li>
                 <li>Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]</li>
@@ -138,13 +141,29 @@
             </ol>
         </section>
         
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="css_units">
+            <header>CSS Units</header>
+            <p>CSS has several different units for expressing a length.</p>
+            <p>Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.</p>
+            <p>Length is a number followed by a length unit, such as 10px, 2em, etc.</p>
+            <p>CSS units could be divided to 2 types of units: Fixed units and Relative units</p>
+            <ul>
+                <li>
+                    <p>Fixed units</p>
+                </li>
+                    <p>Fixed units have fixed sizes and will appear as exactly that size.</p>
+                    <p>Generally fixed units are not reccomended because it's unresponsive. It does not scale at all no matter what the viewer's screen size is or what's their font preference. It stays exactly the same and often look bad on different screen sizes.</p>
+                    <p>The most used fixed unit is px (pixels). There are others such as cm (centimeters), mm (milimeters), in (inches), etc.</p>
+                <li>Relative units</li>
+                    <p>Relative units specifies the length relative to another length property.</p>
+                    <p>Some examples of relative units are:</p>
+                    <img src="relative units.PNG" alt="relative units">
+            </ul>
         </section>
         
-        <section class="main-section" id="">
+        <!-- <section class="main-section" id="">
             <header></header>
-        </section>
+        </section> -->
         
         <section class="main-section" id="">
             <header></header>
