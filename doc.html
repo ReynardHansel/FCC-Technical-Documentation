@@ -18,11 +18,11 @@
             <li><a class="nav-link" id="css_units">CSS Units</a></li> <!--+ color units--> 
             <!-- <li><a class="nav-link" id="css_box_model">CSS Box Model</a></li> -->
             <li><a class="nav-link" id="fonts">Fonts</a></li>
-            <li><a class="nav-link" id="pseudo_classes">Pseudo Classes</a></li>
-            <li><a class="nav-link" id="pseudo_elements">Pseudo Elements</a></li>
-            <li><a class="nav-link" id="flexbox">Flexbox</a></li>
-            <li><a class="nav-link" id="grid">Grid</a></li>
-            <li><a class="nav-link" id="transition">Transition</a></li>
+            <!-- <li><a class="nav-link" id="pseudo_classes">Pseudo Classes</a></li>
+            <li><a class="nav-link" id="pseudo_elements">Pseudo Elements</a></li> -->
+            <li><a class="nav-link" id="flexbox&grid">Flexbox & Grid</a></li>
+            <!-- <li><a class="nav-link" id="grid">Grid</a></li> -->
+            <!-- <li><a class="nav-link" id="transition">Transition</a></li> -->
             <li><a class="nav-link" id="animation">Animation</a></li>
             <li><a class="nav-link" id="media_query">Media Query</a></li>
             <li><a class="nav-link" id="responsive_css">Responsive CSS</a></li>
@@ -165,25 +165,42 @@
             <header></header>
         </section> -->
         
-        <section class="main-section" id="">
+        <section class="main-section" id="fonts">
+            <header>Fonts</header>
+            <p>Fonts is a really important part of a website as it could make your site looks incredibly awesome, or make people dislike it. You can change the default HTML font in CSS by using the <code>font-family:</code> property.</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    p {
+        font-family: sans-serif;
+    }
+                </code>
+            </pre>
+            <p>Now all the &lt;p&gt; elements will be shown in sans-serif.</p>
+
+            <p>You could also import fonts from google that google has provided for free. All you have to do is go to <a href="fonts.google.com">fonts.google.com</a>, select the font that you want.</p>
+            <p>Now look at the right side of your screen, select the <code>@import</code> method, and just copy the code below the provided <code>style</code> tag.</p>
+            <img src="@import.png" alt="importing example">
+            <p>If you don't see that review section, go to the top right corner and click "view selected families".</p>
+        </section>
+        
+        <!-- <section class="main-section" id="">
             <header></header>
         </section>
         
         <section class="main-section" id="">
             <header></header>
+        </section> -->
+        
+        <section class="main-section" id="flexbox&grid">
+            <header>Flexbox & Grid</header>
+            <p>Flexbox & Grid are the most popular way to design web pages easily. By just typing <code>display: flex;</code> or <code>display: grid;</code> as the display property, you get access to use flexbox/grid and their respective properties.</p>
+            <P>The element that you give <code>display: flex;</code> or <code>display: grid;</code> will be the flex/grid container. The children/elements in the HTML below that will be called flex items and grid items. There are several properties that can be used for the container and their items. For complete information and how to use flex and grid, you can head to <a href="www.w3schools.com">www.w3schools.com and check their CSS FLexbox and CSS Grid section.</a></P>
         </section>
         
-        <section class="main-section" id="">
+        <!-- <section class="main-section" id="">
             <header></header>
-        </section>
-        
-        <section class="main-section" id="">
-            <header></header>
-        </section>
-        
-        <section class="main-section" id="">
-            <header></header>
-        </section>
+        </section> -->
         
         <section class="main-section" id="">
             <header></header>
