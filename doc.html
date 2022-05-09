@@ -202,15 +202,78 @@
             <header></header>
         </section> -->
         
-        <section class="main-section" id="">
+        <section class="main-section" id="animation">
+            <header>Animation</header>
+            <h2>There are 2 ways you could animate your HTML using CSS:</h2>
+            <ul>
+                <li>Transition</li>
+                <li>Animation (@keyframes)</li>
+            </ul>
+            <h3>Transition</h3>
+            <p>CSS transitions allows you to change property values smoothly, over a given duration. It is mostly used to transition to a hover state smoothly. These are the properties for transition:</p>
+            <ul>
+                <li><code>transition-delay</code></li>
+                <li><code>transition-duration</code></li>
+                <li><code>transition-property</code></li>
+                <li><code>transition-timing-function</code></li>  
+            </ul>
+            <p>However the most important part is <code>transition-duration</code>, transition will not work if the duration isn't specified, because the default value is 0</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    div {
+        width: 100px;
+        background-color: red;
+        transition: all;
+        transition-duration: 1s;
+        transition-delay: .5s;
+    }
+
+    div:hover {
+        width: 200px;
+        transform: translateX(50px);
+        background-color: yellow;
+    }
+                </code>
+            </pre>
+            <h3>Animate (@keyframes)</h3>
+            <p>An animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times as you want. To use CSS animation, you must first  Keyframes hold what styles the element will have at certain times.</p>
+            <p>First, we add the properties <code>animation name</code> & <code>animation-duration</code> to the elements we target. (Note: if these 2 properties are not specified, then no animations will occur.</p>
+            <p>Next, we use <code>@keyframes</code> and then we specify what would happen within the animation. Animation will start from 0% and end in 100%</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    div {
+        width: 100px;
+        background-color: red;
+        animation-name: animate;
+        animation-duration: 4s;
+    }
+
+    @keyframes animate {
+        25% {
+            width: 200px;
+        }
+        50% {
+            background-color: green;
+        }
+        75% {
+            translateX (200px);
+        }
+        100% {
+            border-radius: 50%;
+        }
+    }
+                </code>
+            </pre>
+            <p>After 1s, the div will grow to 200px. After 2s, the background-color will now be green. After 3s, the div will move to the right by 200px. After 4s, the div will become a circle. And then the animation ends and will go back to it's original postition. If you want the animation to stay in it's last place, you could type <code>animation-fill-mode: forwards;</code>. For detailed explanations about animation, you could go to w3schools animation section<a href="https://www.w3schools.com/css/css3_animations.asp">here</a></p>
+        </section>
+        
+        <section class="main-section" id="media_query">
             <header></header>
         </section>
         
-        <section class="main-section" id="">
-            <header></header>
-        </section>
-        
-        <section class="main-section" id="">
+        <section class="main-section" id="responsive_css">
             <header></header>
         </section>  
               
