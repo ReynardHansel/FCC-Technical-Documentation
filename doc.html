@@ -270,11 +270,36 @@
         </section>
         
         <section class="main-section" id="media_query">
-            <header></header>
+            <header>Media Query</header>
+            <p>Sometimes we made a pretty good job making the frotend design of a web. But then you reduce the width of the browser or open it in your phone, it breaks apart and looked terrible. The layout got broken and the elements are everywhere. Sometimes things are too big or not centered enough, etc</p>
+            <p>That's where Media Query comes in.</p>
+            <p>Media Query lets you customize the css that works at a certain screen size.</p>
+            <p>To use it, type <code>@media</code> and then specify when should the code within the <code>@media</code> runs. Add <code>{}</code> and type the CSS inside it.</p>
+            <p>Ex:</p>
+            <pre>
+                <code>
+    @media (min-width: 600px) {
+        div {
+            background-image: mobile-view-image.jpg;
+            background-size: cover;
+            font-size: .7rem;
+        }
+    }
+                </code>
+            </pre>
+            <p>Now when the screen gets 600px and wider, the background in the <code>&lt;div&gt; and the font size</code> will change.</p>
         </section>
         
         <section class="main-section" id="responsive_css">
-            <header></header>
+            <header>Responsive CSS</header>
+            <p>Responsive CSS design means that no matter what screen size the viewer has, the design will still look good and makes the viewer still comfortable staying & interacting with it.</p>
+            <p>Some things to keep in mind when writing CSS and make it responsive:</p>
+            <ul>
+                <li>Avoid using fixed units like pixels.</li>
+                <li>Design for mobile first, then use media query to fix the look in desktop view.</li>
+                <li>Use modern design techniques</li>
+                <li>Avoid fixed dimensions like <code>width</code> and <code>height</code> and try using <code>min-height</code> and <code>max-width</code> instead (note: width and height are not bad and are still used, just try sometimes to break out of it and use min-height & max-width instead)</li>
+            </ul>
         </section>  
               
     </main>
