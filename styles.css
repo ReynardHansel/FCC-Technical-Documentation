@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-* {
+*:not(code) {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 #navbar {
     padding: 3vw;
@@ -81,7 +82,38 @@
     border-bottom: 2px solid black;
 } */
 
-
+img {
+    max-width: 100%;
+}
 section > p, section>ul, section>ol{
     margin-left: 2em;
+}
+pre {
+    background-color: hsl(0, 0%, 97%);
+}
+p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+p > code {
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+#specificity h2 {
+    text-decoration: underline;
+}
+
+#animation h2{
+    font-size: 1.3rem;
+    font-style: italic;
+    /* text-align: center; */
+    /* margin-bottom: 20px; */
+}
+#animation h3 {
+    margin-top: 40px;
+    text-decoration: underline;
+}
+#animation ul {
+    margin: 20px auto;
 }

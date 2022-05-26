@@ -34,16 +34,19 @@
         <section class="main-section" id="introduction">
             <header>Introduction</header>
             <p>Cascading Style Sheets (CSS) describes how HTML elements are to be displayed on screen, paper, or in other media. It saves a lot of work as it can control layouts and designs of multiple web pages at once.</p>
+
             <p>External stylesheets are stored in css files (.css)</p>
         </section>
         
         <section class="main-section" id="how_to_use">
             <header>How to Use</header>
             <p>There are 2 ways you could use CSS:</p>
+
             <ul>
                 <li>
                     The first one is to use the style tag in HTML and then write CSS in it.
                     <p>Ex:</p>
+
                     <code><img src="style tag.PNG"></code>
                 </li>
                 <li>The second one is to write your CSS in another CSS file, then link it to your HTML file(s)
@@ -57,8 +60,11 @@
         <section class="main-section" id="selectors">
             <header>Selectors</header>
             <p>Now that you have created the place where you can write CSS (whether it's a style tag or a new .css file), it's time to write and use CSS.</p>
+
             <p>CSS targets an HTML attribute, then tells it to display a certain way. So to use CSS, first you have to select/target the element you want to style. This is done by what's called a "Selector" in CSS</p>
+
             <p>Ex:</p>
+
             <pre>
                 <code>
     p {
@@ -69,7 +75,9 @@
                 </code>
             </pre>
             <p>Now all the &lt;p&gt; tags in the html file will have red color, 20px big, and displayed in italic.</p>
+
             <p>There's a lot of CSS selectors but the most common used ones are the class and id selectors. You do this by defining a class and id in the html tag (Ex: <code>&lt;div class="card" id="first-card"&gt;&lt;/div&gt;</code>). And then to target a class, put a <code>.</code> in front of the class name. To target an id, put a <code>#</code> in front of the id name.</p>
+
             <p>Ex:</p>
             <pre>
                 <code>
@@ -89,6 +97,7 @@
         <section class="main-section" id="css_properties">
             <header>CSS Properties</header>
             <p>CSS properties specifies what to style of the targeted HTML elements</p>
+
             <p>For example, you can make a &lt;div&gt; background to be red, the text in that &lt;div&gt; to have the color white, and all the fonts in that page Open Sans. You can do that by doing something like this:</p>
             <pre>
                 <code>
@@ -111,6 +120,7 @@
         <section class="main-section" id="specificity">
             <header>Specificity</header>
             <p>If you have different styles that targets the same HTML element, CSS will run the code that is more specific/have higher specificity.</p>
+
             <p>Ex:</p>
             <pre>
                 <code>
@@ -132,8 +142,10 @@
             </pre>
             <p>There are 3 selectors that targets the same element and each of them has different properties. But the text will be shown in the color blue because an id(#) is more specific than a class and element selector.</p>
 
+
             <h2>Specificity Hierarchy</h2>
             <p>Below are the order of the most specific (most priority) to the least specific (less priority) that you'll see on a daily basis:</p>
+
             <ol>
                 <li>Inline styles - Example: &lt;h1 style="color: pink;"&gt;&lt;/h1&gt;</li>
                 <li>IDs - Example: #navbar</li>
@@ -145,19 +157,28 @@
         <section class="main-section" id="css_units">
             <header>CSS Units</header>
             <p>CSS has several different units for expressing a length.</p>
+
             <p>Many CSS properties take "length" values, such as width, margin, padding, font-size, etc.</p>
+
             <p>Length is a number followed by a length unit, such as 10px, 2em, etc.</p>
+
             <p>CSS units could be divided to 2 types of units: Fixed units and Relative units</p>
             <ul>
                 <li>
                     <p>Fixed units</p>
+
                 </li>
                     <p>Fixed units have fixed sizes and will appear as exactly that size.</p>
+
                     <p>Generally fixed units are not reccomended because it's unresponsive. It does not scale at all no matter what the viewer's screen size is or what's their font preference. It stays exactly the same and often look bad on different screen sizes.</p>
+
                     <p>The most used fixed unit is px (pixels). There are others such as cm (centimeters), mm (milimeters), in (inches), etc.</p>
+
                 <li>Relative units</li>
                     <p>Relative units specifies the length relative to another length property.</p>
+
                     <p>Some examples of relative units are:</p>
+
                     <img src="relative units.PNG" alt="relative units">
             </ul>
         </section>
@@ -169,6 +190,7 @@
         <section class="main-section" id="fonts">
             <header>Fonts</header>
             <p>Fonts is a really important part of a website as it could make your site looks incredibly awesome, or make people dislike it. You can change the default HTML font in CSS by using the <code>font-family:</code> property.</p>
+
             <p>Ex:</p>
             <pre>
                 <code>
@@ -179,8 +201,11 @@
             </pre>
             <p>Now all the &lt;p&gt; elements will be shown in sans-serif.</p>
 
+
             <p>You could also import fonts from google that google has provided for free. All you have to do is go to <a href="fonts.google.com">fonts.google.com</a>, select the font that you want.</p>
+
             <p>Now look at the right side of your screen, select the <code>@import</code> method, and just copy the code below the provided <code>style</code> tag.</p>
+
             <img src="@import.png" alt="importing example">
             <p>If you don't see that review section, go to the top right corner and click "view selected families".</p>
         </section>
@@ -196,8 +221,10 @@
         <section class="main-section" id="flexbox&grid">
             <header>Flexbox & Grid</header>
             <p>Flexbox & Grid are the most popular way to design web pages easily. By just typing <code>display: flex;</code> or <code>display: grid;</code> as the display property, you get access to use flexbox/grid and their respective properties.</p>
-            <P>The element that you give <code>display: flex;</code> or <code>display: grid;</code> will be the flex/grid container. The children/elements in the HTML below that will be called flex items and grid items. There are several properties that can be used for the container and their items. For complete information and how to use flex and grid, you can head to <a href="www.w3schools.com">www.w3schools.com and check their CSS FLexbox and CSS Grid section.</a></P>
-        </section>
+
+            <P>The element that you give <code>display: flex;</code> or <code>display: grid;</code> will be the flex/grid container. The children/elements in the HTML below that will be called flex items and grid items.</P>
+
+            <p>There are several properties that can be used for the container and their items. For complete information and how to use flex and grid, you can head to <a href="www.w3schools.com">www.w3schools.com</a> and check their CSS FLexbox and CSS Grid section.</p>
         
         <!-- <section class="main-section" id="">
             <header></header>
@@ -212,6 +239,7 @@
             </ul>
             <h3>Transition</h3>
             <p>CSS transitions allows you to change property values smoothly, over a given duration. It is mostly used to transition to a hover state smoothly. These are the properties for transition:</p>
+
             <ul>
                 <li><code>transition-delay</code></li>
                 <li><code>transition-duration</code></li>
@@ -219,6 +247,7 @@
                 <li><code>transition-timing-function</code></li>  
             </ul>
             <p>However the most important part is <code>transition-duration</code>, transition will not work if the duration isn't specified, because the default value is 0</p>
+
             <p>Ex:</p>
             <pre>
                 <code>
@@ -239,8 +268,11 @@
             </pre>
             <h3>Animate (@keyframes)</h3>
             <p>An animation lets an element gradually change from one style to another. You can change as many CSS properties you want, as many times as you want. To use CSS animation, you must first  Keyframes hold what styles the element will have at certain times.</p>
+
             <p>First, we add the properties <code>animation name</code> & <code>animation-duration</code> to the elements we target. (Note: if these 2 properties are not specified, then no animations will occur.</p>
+
             <p>Next, we use <code>@keyframes</code> and then we specify what would happen within the animation. Animation will start from 0% and end in 100%</p>
+
             <p>Ex:</p>
             <pre>
                 <code>
@@ -267,15 +299,21 @@
     }
                 </code>
             </pre>
-            <p>After 1s, the div will grow to 200px. After 2s, the background-color will now be green. After 3s, the div will move to the right by 200px. After 4s, the div will become a circle. And then the animation ends and will go back to it's original postition. If you want the animation to stay in it's last place, you could type <code>animation-fill-mode: forwards;</code>. For detailed explanations about animation, you could go to w3schools animation section<a href="https://www.w3schools.com/css/css3_animations.asp">here</a></p>
+            <p>After 1s, the div will grow to 200px. After 2s, the background-color will now be green. After 3s, the div will move to the right by 200px. After 4s, the div will become a circle. And then the animation ends and will go back to it's original postition.</p>
+
+            <p>If you want the animation to stay in it's last place, you could type <code>animation-fill-mode: forwards;</code>. For detailed explanations about animation, you could go to w3schools animation section <a href="https://www.w3schools.com/css/css3_animations.asp">here</a></p>
         </section>
         
         <section class="main-section" id="media_query">
             <header>Media Query</header>
             <p>Sometimes we made a pretty good job making the frotend design of a web. But then you reduce the width of the browser or open it in your phone, it breaks apart and looked terrible. The layout got broken and the elements are everywhere. Sometimes things are too big or not centered enough, etc</p>
+
             <p>That's where Media Query comes in.</p>
+
             <p>Media Query lets you customize the css that works at a certain screen size.</p>
+
             <p>To use it, type <code>@media</code> and then specify when should the code within the <code>@media</code> runs. Add <code>{}</code> and type the CSS inside it.</p>
+
             <p>Ex:</p>
             <pre>
                 <code>
@@ -288,13 +326,15 @@
     }
                 </code>
             </pre>
-            <p>Now when the screen gets 600px and wider, the background in the <code>&lt;div&gt; and the font size</code> will change.</p>
+            <p>Now when the screen gets 600px and wider, the background in the <code>&lt;div&gt;</code> and the font size will change.</p>
         </section>
         
         <section class="main-section" id="responsive_css">
             <header>Responsive CSS</header>
             <p>Responsive CSS design means that no matter what screen size the viewer has, the design will still look good and makes the viewer still comfortable staying & interacting with it.</p>
+
             <p>Some things to keep in mind when writing CSS and make it responsive:</p>
+
             <ul>
                 <li>Avoid using fixed units like pixels.</li>
                 <li>Design for mobile first, then use media query to fix the look in desktop view.</li>
