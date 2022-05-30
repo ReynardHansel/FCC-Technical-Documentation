@@ -107,21 +107,21 @@ p > code {
 }
 
 
-#specificity h2 {
+#Specificity h2 {
     text-decoration: underline;
 }
 
-#animation h2{
+#Animation h2{
     font-size: 1.3rem;
     font-style: italic;
     /* text-align: center; */
     /* margin-bottom: 20px; */
 }
-#animation h3 {
+#Animation h3 {
     margin-top: 40px;
     text-decoration: underline;
 }
-#animation ul {
+#Animation ul {
     margin: 20px auto;
 }
 
